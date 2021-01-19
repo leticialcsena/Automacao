@@ -1,7 +1,7 @@
 *** Settings ***
 Resource       ../resource/ResourceCriarMovimentacao.robot
 Test Setup     Abrir navegador
-###Test Teardown  Fechar navegador
+Test Teardown  Fechar navegador
 
 *** Test Case ***
 Caso de Teste 01: Criar movimentação sem conta cadastrada
