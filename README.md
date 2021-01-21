@@ -3,13 +3,13 @@
 
 ### INSTRUÇÕES PARA INSTALAR O PYTHON E O ROBOT
 
-**Disponibilizei um documento com as instruções para preparar o seu ambiente para rodar a automação com o Robot Framework no link abaixo:**
+**Disponibilizei um documento com as instruções para preparar o seu ambiente para rodar a automação com o Robot Framework no link ao lado:**
 [Tutoria de Instalação](https://drive.google.com/file/d/1IIjox7tX8vNGBjl3i5lgcIzlxI1sCGej/view?usp=sharing)
 
 
 ### INSTRUÇÕES PARA EXECUTAR OS COMANDOS
 
-**Disponibilizei um documento com os comandos necessários para executar todas as suítes de automação no link abaixo**
+**Disponibilizei um documento com os comandos necessários para executar todas as suítes de automação no link ao lado**
 [Comandos de execução da automação](https://drive.google.com/file/d/1DWkeQb-9N2F2fA3SX0N-hYgu5YzRSeTG/view?usp=sharing)
 
 ---
