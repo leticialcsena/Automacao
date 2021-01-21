@@ -3,6 +3,7 @@
 ${URL}                          https://seubarriga.wcaquino.me/login
 ${URL_posLogin}                 https://seubarriga.wcaquino.me/logar
 
+##########
 ### LOGIN E NOVO USUÁRIO
 #Menu, campos e botões
 ${input_emailUsuario_name}      name=email
@@ -17,7 +18,7 @@ ${senha}                        ts16rh
 ${emailInvalido}                euleticiasena@gmailcom
 ${senhaInvalida}                123456
 ${nomeNovoUsuario}              Seu Madruga
-${emailNovoUsuario}             madruga.seu@leticiaaaa.com.br
+${emailNovoUsuario}             madruga.seu@leticiiiia.com.br
 #Mensagens de login
 ${mensagemLoginErrado}          Problemas com o login do usuário
 ${mensagemLoginSemDados1}       Email é um campo obrigatório
@@ -28,8 +29,7 @@ ${mensagemUsuarioErro}          Endereço de email já utilizado
 ###########################################################################################
 
 ### CRIAR MOVIMENTAÇÃO
-
-# Campos e botões
+# Menu, campos e botões
 ${menu_criarMovimentacao}       xpath=//a[@href='/movimentacao'][contains(.,'Criar Movimentação')]
 ${select_tipoMovimentacao}      name=tipo
 ${tipoReceita}                  Receita
@@ -42,8 +42,6 @@ ${input_valor}                  name=valor
 ${select_conta}                 name=conta
 ${select_situacao}              status
 ${botao_salvar}                 xpath=//button[@type='submit'][contains(.,'Salvar')]
-
-
 # Dados utilizados
 ${dataMovimentacao}             15/01/2021
 ${dataMovimentacaoErrada}       18/02/2022
@@ -61,7 +59,6 @@ ${conta1}                       Aluguel
 ${conta2}                       Condomínio
 ${situacaoPaga}                 status_pago
 ${situacaoPendente}             status_pendente
-
 # Mensagens
 ${mensagemMovSucesso}           Movimentação adicionada com sucesso!
 ${mensagemContaObrigatoria}     Conta é obrigatório
@@ -73,14 +70,15 @@ ${mensagemDataMovFutura}        Data da Movimentação deve ser menor ou igual �
 ####################################################################
 
 ### RESUMO MENSAL
-
 # Menu, campos e  botões
 ${menu_resumoMensal}            xpath=//a[@href='/extrato'][contains(.,'Resumo Mensal')]
 ${select_mes}                   xpath=//select[contains(@id,'mes')]
 ${select_ano}                   xpath=//select[contains(@id,'ano')]
-${botao_deletarMovimentacao}    xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[1]
+${botao_deletarMovimentacao1}   xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[1]
+${botao_deletarMovimentacao2}   xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[2]
+${botao_deletarMovimentacao3}   xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[3]
 ${botao_buscar}                 xpath=//input[contains(@type,'submit')]
-# Dados
+# Dados utilizados
 ${mesFev}                       Fevereiro
 ${mesJan}                       Janeiro
 ${ano2020}                      2020
@@ -88,25 +86,21 @@ ${ano2021}                      2021
 ${pendente}                     Pendente
 ${pago}                         Pago
 
-
 ####################################################################
 
 ### CONTAS
-
 # Menus, campos e botões
-
 ${menu_contas}                  xpath=//a[@href='/'][contains(.,'Contas')]
 ${submenu_adicionar}            xpath=//a[@href='/addConta'][contains(.,'Adicionar')]
 ${input_nomeNovaConta}          xpath=//input[contains(@id,'nome')]
 ${submenu_listar}               xpath=//a[@href='/contas'][contains(.,'Listar')]
 ${botao_editarConta3}           xpath=(//span[contains(@class,'glyphicon glyphicon-edit')])[3]
 ${botao_excluirConta3}          xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[3]
+${botao_excluirConta2}          xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[2]
 ${botao_excluirConta1}          xpath=(//span[contains(@class,'glyphicon glyphicon-remove-circle')])[1]
-
-# Dados
+# Dados utilizados
 ${conta3}                       Warren
 ${conta4}                       Reserva de Emergência
-
 # Mensagens
 ${mensagemContaSucesso}         Conta adicionada com sucesso!
 ${mensagemContaExistente}       Já existe uma conta com esse nome!
@@ -117,10 +111,8 @@ ${mensagemContaEmUso}           Conta em uso na movimentações
 ####################################################################
 
 ### HOME
-
-# Dados
+# Dados utilizados
 ${home_conta}                   Aluguel
 ${home_saldo}                   -100
-
 #Botões
 ${botao_Sair}                   xpath=//a[@href='/logout'][contains(.,'Sair')]

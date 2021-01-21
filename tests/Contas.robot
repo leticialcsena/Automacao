@@ -1,7 +1,7 @@
 *** Settings ***
 Resource       ../resource/ResourceContas.robot
 Test Setup     Abrir navegador
-#Test Teardown  Fechar navegador
+Test Teardown  Fechar navegador
 
 *** Test Case ***
 Caso de Teste 01: Adicionar conta

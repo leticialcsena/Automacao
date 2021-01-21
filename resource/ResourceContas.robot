@@ -3,12 +3,12 @@ Library     SeleniumLibrary
 Resource    ../resource/VariaveisAutomacao.robot
 
 ***Variables***
-${BROWSER}    firefox
+${BROWSER}                            firefox
 
 *** Keywords ***
 ### Setup e Teardown
 Abrir navegador
-  Open Browser    about:blank    ${BROWSER}
+  Open Browser    about:blank         ${BROWSER}
 
 Fechar navegador
   Close Browser
@@ -29,9 +29,9 @@ Preencher o campo Nome com o nome da conta3
 Clicar no botão salvar
   Click Element                        ${botao_salvar}
 Conferir se nova conta foi salva com sucesso
-   Page Should Contain                 ${mensagemContaSucesso}
+  Page Should Contain                  ${mensagemContaSucesso}
 Clicar no submenu Listar
-    Click Element                      ${submenu_listar}
+  Click Element                        ${submenu_listar}
 
 # Caso de Teste 02
 Conferir mensagem de conta existente

@@ -3,12 +3,12 @@ Library     SeleniumLibrary
 Resource    ../resource/VariaveisAutomacao.robot
 
 ***Variables***
-${BROWSER}    firefox
+${BROWSER}                             firefox
 
 *** Keywords ***
 ### Setup e Teardown
 Abrir navegador
-  Open Browser    about:blank            ${BROWSER}
+  Open Browser    about:blank          ${BROWSER}
 
 Fechar navegador
   Close Browser

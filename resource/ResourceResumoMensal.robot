@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Resource    ../resource/VariaveisAutomacao.robot
 
 ***Variables***
-${BROWSER}    firefox
+${BROWSER}                             firefox
 
 *** Keywords ***
 ### Setup e Teardown
@@ -45,4 +45,4 @@ Verificar que existe pelo menos um registro
 
 # Caso de Teste 03
 Deletar movimentação
-  Click Element                        ${botao_deletarMovimentacao}
+  Click Element                        ${botao_deletarMovimentacao1}

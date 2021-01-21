@@ -1,5 +1,5 @@
 *** Settings ***
-Resource       ../resource/ResourceStartAutomacao.robot
+Resource       ../resource/ResourceEndAutomacao.robot
 Test Setup     Abrir navegador
 Test Teardown  Fechar navegador
 
@@ -13,11 +13,11 @@ Caso de Teste 01: Limpar todos as movimentações de 2021
 
 Caso de Teste 02: Limpar todas as contas
     Fazer login
-    Clicar no menu Contar
+    Clicar no menu Contas
     Clicar no submenu Listar
     Deletar primeira conta
     Deletar segunda conta
 
 Caso de Teste 03: Confirmar se não possui nada na home
     Fazer login
-    Conferir que não possui conta de aluguel na home
+    Garantir que não possui conta de aluguel na home

@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Resource    ../resource/VariaveisAutomacao.robot
 
 ***Variables***
-${BROWSER}    firefox
+${BROWSER}                               firefox
 
 *** Keywords ***
 ### Setup e Teardown

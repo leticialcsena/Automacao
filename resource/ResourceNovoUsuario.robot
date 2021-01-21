@@ -3,12 +3,12 @@ Library     SeleniumLibrary
 Resource    ../resource/VariaveisAutomacao.robot
 
 ***Variables***
-${BROWSER}    firefox
+${BROWSER}                               firefox
 
 *** Keywords ***
 ### Setup e Teardown
 Abrir navegador
-  Open Browser    about:blank    ${BROWSER}
+  Open Browser    about:blank            ${BROWSER}
 
 Fechar navegador
   Close Browser
@@ -20,7 +20,7 @@ Acessar a página de login
 Clicar no menu Novo Usuário
   Click Element                          ${menu_novoUsuario_xpath}
 Digitar o nome do novo usuário
-  Input Text                             ${input_nomeUsuario_name}       ${nomeNovoUsuario}
+  Input Text                             ${input_nomeUsuario_name}        ${nomeNovoUsuario}
 Digitar a senha do novo usuário
   Input Text                             ${input_senha_name}              ${senha}
 Clicar no botão cadastrar
