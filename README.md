@@ -23,7 +23,7 @@ Os arquivos dos projetos estão separados em duas pastas:
 
 Sendo que, na pasta de **Resource** estão os arquivos resources de cada suíte de teste. Nestes arquivos são listados todas as *Keywords*, ou seja, as instruções que o robô vai seguir para executar a automação conforme o planejado. Nesta pasta também pode ser encontrado o arquivo de Variáveis (**VariaveisAutomacao.robot**), este contém todos os **dados** que vamos utilizar em formas de variáveis nos arquivos de resources como por exemplo o e-mail para fazer login, a senha, tipo de conta, xpath de botões, menus e campos além das mensagens de erro e sucesso do site.
 
-Já na pastas **Tests** estão os arquivos com os **casos de teste**, estes são a base que vai popular os arquivos de resource, é a partir dele que se monta as instruções com as keywords. Nesta automação foi usada a forma de escrita **procedural**, porém existe a possibilidade de se escrever em **BDD**, por exemplo, é só uma questão de escolher a melhor prática que atenda ao projeto e a equipe.
+Já na pastas **Tests** estão os arquivos com os **casos de teste** (chamaremos de suítes de testes), estes são a base que vai popular os arquivos de resource, é a partir dele que se monta as instruções com as keywords. Nesta automação foi usada a forma de escrita **procedural**, porém existe a possibilidade de se escrever em **BDD**, por exemplo, é só uma questão de escolher a melhor prática que atenda ao projeto e a equipe.
 
 OBS: Cada arquivo de teste tem o seu resource, é feito dessa forma para ficar mais fácil de dar manutenção em possíveis alterações e evoluções de uma funcionalidade ou tela. Então na pasta tests você encontra o arquivo Login.robot, e na pasta resource você encontra seu arquivo de keywords correspondente com o nome de ResourceLogin.robot.
 
@@ -50,13 +50,13 @@ Mas para garantir também essa regra de não aceitação criei dentro do arquivo
 Como a estratégia de ponto de partida  dessa automação é de um site sem nenhum dado,  criei este arquivo para rodar no final de toda validação de casos de teste do sistema, ele terá a função de limpar todos os arquivos já deixando **tudo pronto para quando precisarmos executar a automação novamente**.
 
 
-### RESSALVA PARA SUITE DE TESTE NOVOUSUARIO.ROBOT
+### RESSALVA PARA O ARQUIVO NOVOUSUARIO.ROBOT
 Toda as vezes que você for executar a automação do cadastro de um novo usuário, você deve acessar o arquivo **VariaveisAutomacao.robot** na pasta Resource e alterar o valor da variável *${emailNovoUsuario}* para um e-mail que ainda não está cadastrado na base do site.
 Esse teste tem duas validações, primeiro ele valida a criação de um novo usuário a partir de um e-mail não registrado na base e em seguida ele valida a criação de um novo usuário com um e-mail já registrado na base. Sendo assim, quando você rodar a automação o valor na variável de email do novo usuário será utilizado e então o arquivo de variáveis fica desatualizado, necessitando de um novo e-mail para rodar corretamente.
 OBS: Se essa alteração não for feita o robot alertará uma falha já que aquele e-mail já será reconhecido.
 
 
-### RESSALVA PARA A SUITE DE TESTE HOME.ROBOT
+### RESSALVA PARA O ARQUIVO HOME.ROBOT
 O cenários de teste que está sendo validado nesta suíte é a partir do valor das variáveis que estão no arquivo VariaveisAutomacao.robot, caso você queira alterar os valores de criação de movimentação ou tipo de movimentação você também deve atualizar o valor da variável de saldo da home.
 
 ---
