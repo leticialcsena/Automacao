@@ -9,7 +9,7 @@
 
 ### INSTRUÇÕES PARA EXECUTAR OS COMANDOS
 
-**Disponibilizei um documento com os comandos necessários para executar todas as suítes de automação no link ao lado**
+**Disponibilizei um documento com os comandos necessários para executar todas as suítes de automação no link ao lado:**
 [Comandos de execução da automação](https://drive.google.com/file/d/1DWkeQb-9N2F2fA3SX0N-hYgu5YzRSeTG/view?usp=sharing)
 
 ---
@@ -36,7 +36,7 @@ Sabendo dessa estratégia é preciso manter uma ordem de execução de cada suí
 
 Mas para garantir também essa regra de não aceitação criei dentro do arquivo CriarMovimentacao.robot a validação para garantir que não será possível criar uma movimentação sem a conta, ou seja se você rodar primeiro o arquivo Contas.robot ao executar o arquivo CriarMovimentacao.robot o primeiro caso de teste não vai passar pois você já criou uma conta.
 
-#### A partir disso a ordem de execução dos casos deve ser:
+#### A PARTIR DISSO A ORDEM DE EXECUÇÃO DOS CASOS DE SER:
 - NovoUsuario.robot
 - Login.robot
 - CriarMovimentacao.robot
